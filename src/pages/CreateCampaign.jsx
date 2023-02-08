@@ -36,7 +36,6 @@ const CreateCampaign = () => {
           await createCampaign({...form, target: ethers.utils.parseUnits(form.target, 18)})
           setIsLoading(false);
           navigate('/')
-          console.log(form);
         } else {
           alert('Provide Valid Image URL')
           setForm({...form, image: ''})
